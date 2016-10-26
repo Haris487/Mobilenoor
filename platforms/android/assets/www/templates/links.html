@@ -1,0 +1,116 @@
+<ion-view>
+  <ion-content class='content'>
+    <div class='card'>
+      <div class='pane-bar pane-header'>
+        <p class="head">Pakistan Standards & Quality Control Authority</p>
+      </div>
+      <button class="absolute" ng-click="myGoBack()" ion-button><i class="icon ion-ios-arrow-back"></i></button>
+      <div class='pane-body'>
+
+        <div class="row">
+          <div class='col col-50'>
+            <p class='pane-description'>
+            </p>
+          </div>
+
+          <div class='col col-50'>
+            <img id='logo' src="img/logo.png" alt='LOGO'/>
+          </div>
+        </div>
+
+      </div>
+      <div class="list">
+        <div class="inputdiv ">
+
+
+          <div class='row'>
+            <!-- ROW 1 -->
+
+            <!-- COL 11 -->
+            <div class='icon-holder col-50'>
+              <div class='icon-clickable'>
+                <!--<a class = "fb" href="https://www.facebook.com/PSQCA.headoffice">-->
+                <a class="fb"
+                   onclick="window.open('https://www.facebook.com/PSQCA.headoffice','_system','location=no')">
+                  <i class="icon ion-social-facebook"></i>
+                </a>
+              </div>
+              <p class="icon-description">Official Facebook Page</p>
+
+            </div>
+
+            <!-- COL 12 -->
+            <div class='icon-holder col-50'>
+              <div class='icon-clickable'>
+
+                <!--<a class="fb" href="http://most.gov.pk/">-->
+                <a class="fb" onclick="window.open('http://most.gov.pk/','_system','location=no')">
+
+                  <i class = 'icon ion-link'></i>
+
+                </a>
+              </div>
+              <p class="icon-description">Science & Technology Department</p>
+
+            </div>
+
+          </div>
+
+
+          <!-- ROW 2 -->
+          <div class='row'>
+            <!-- COL 21 -->
+            <div class='icon-holder col-50'>
+              <div ui-sref="feedBack" class='icon-clickable'>
+                <i class="icon ion-loop"></i>
+              </div>
+              <p class="icon-description">Feedback & Complaints</p>
+            </div>
+
+            <!-- COL 22 -->
+            <div class='icon-holder col-50'>
+              <div class='icon-clickable'>
+                <a class="fb" onclick="window.open('http://pakalerts.net/PSQ/Gallery.html','_system','location=no')">
+                <i class="icon ion-images"></i>
+                </a>
+              </div>
+              <p class="icon-description">Photo Gallery</p>
+            </div>
+
+
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="row footertab">
+        <div class="col col-33">
+          <a class="tab-item" ui-sref="home">
+            <i class="icon ion-home"></i>
+            Home
+          </a>
+        </div>
+
+        <div class="col col-33">
+          <a class="tab-item" ui-sref="about">
+            <i class="icon ion-information-circled"></i>
+            About PSQCA
+          </a>
+        </div>
+
+        <div class="col col-33">
+          <a class="tab-item" ng-click="logout()">
+            <i class="icon ion-log-out"></i>
+            Logout
+          </a>
+        </div>
+      </div>
+
+
+      <div class='pane-bar pane-footer'>
+        <p class="Text">Copyrights 2016 by PSQCA<br>Design and Developed by Adarts Digital</p>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,117 @@
+<ion-view>
+  <ion-content class = 'content'>
+
+    <!-- A panel for all pages similar -->
+    <div class = 'card'>
+      <div class = 'pane-bar pane-header'>
+        <p class="head">Pakistan Standards & Quality Control Authority</p>
+      </div>
+      <button class="absolute" ng-click="myGoBack()" ion-button><i class="icon ion-ios-arrow-back"></i></button>
+      <div class = 'pane-body'>
+        <div class="row">
+          <div class = 'col col-50'>
+            <p id = 'field-required'>
+              Fill Required Fields
+            </p>
+          </div>
+
+          <div class = 'col col-50'>
+            <img id = 'logo' src="img/logo.png" alt = 'LOGO'/>
+          </div>
+        </div>
+
+        <div class = 'row'>
+          <div class="col col-100">
+            <h4>FeedBack Form</h4>
+          </div>
+
+        </div>
+        <div class="inputs">
+
+
+          <div class = 'list'>
+            <p class = 'text'>Full Name</p>
+            <label class="item item-input">
+              <input type="text" ng-model="mail.Name" placeholder="Full Name">
+            </label>
+          </div>
+
+
+          <div class = 'list'>
+            <p class = 'text'>E mail</p>
+            <label class="item item-input">
+              <input type="email" ng-model="mail.E_mail" placeholder="E-mail">
+            </label>
+          </div>
+
+
+
+
+          <div class = 'list'>
+            <p class = 'text'>Contact Number</p>
+            <label class="item item-input">
+              <input type="text" onkeypress="return isNumber(event)" ng-model="mail.Number" placeholder="Contact Number">
+            </label>
+          </div>
+
+          <div class = 'list'>
+            <p class = 'text'>Organization</p>
+            <label class="item item-input">
+              <input type="text" ng-model="mail.Organization" placeholder="Organization">
+            </label>
+          </div>
+          <p class = 'text'>Message</p>
+          <label class="item item-input">
+            <textarea placeholder="Message" ng-model="mail.message"></textarea>
+          </label>
+
+
+          <button  ng-disabled="!mail.E_mail" ng-click="maildone()" class="button button-full button-balanced">
+            Send
+          </button>{{send}}
+
+        </div>
+
+      </div>
+
+
+      <div class="row footertab">
+        <div class="col col-33">
+        <a class="tab-item" ui-sref="home">
+          <i class="icon ion-home"></i>
+          Home
+        </a>
+        </div>
+
+        <div class="col col-33">
+        <a class="tab-item" ui-sref="about">
+          <i class="icon ion-information-circled"></i>
+          About PSQCA
+        </a>
+          </div>
+
+        <div class="col col-33">
+        <a class="tab-item" ng-click="logout()">
+          <i class="icon ion-log-out"></i>
+          Logout
+        </a>
+          </div>
+      </div>
+
+
+      <div class = 'pane-bar pane-footer'>
+        <p class="Text">Copyrights 2016 by PSQCA<br>Design and Developed by Adarts Digital</p>
+      </div>
+
+    </div>
+
+
+
+
+
+  </ion-content>
+
+
+</ion-view>
+
+

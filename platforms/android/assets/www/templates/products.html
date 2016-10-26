@@ -1,0 +1,158 @@
+<ion-view>
+  <ion-content class = 'content'>
+    <div class='card'>
+      <div class = 'pane-bar pane-header'>
+        <p class="head">Pakistan Standards & Quality Control Authority</p>
+      </div>
+      <button class="absolute" ng-click="myGoBack()" ion-button><i class="icon ion-ios-arrow-back"></i></button>
+        <div class="row">
+
+          <div class = 'col col-100'>
+            <img id = 'logo' src="img/logo.png" alt = 'LOGO'/>
+          </div>
+        </div>
+
+      <div class="inputs">
+        <h4 class= "align">Search Products From The<br/>Mendatory Items</h4>
+        <div class = 'list'>
+          <label class="item select item-select">
+            <select ng-model="selected">
+              <option value="">Select Option</option>
+              <option>Product Category</option>
+              <option>Product Name</option>
+              <option>CM License No</option>
+              <option>Brand Name</option>
+            </select>
+
+
+          </label>
+
+          <label class="item item-input bg">
+            <input ng-disabled="!selected" ng-model="item.select" type="text" placeholder="Search">
+          </label>
+        </div>
+        <button ng-disabled="!item.select" ng-click="search()" class="button button-full button-balanced">
+          Search
+        </button>
+        <div class="result" ng-show="searchData.length !=''">
+          <div ng-show="show" class="col seperater col-100" ng-repeat="show in searchData">
+
+
+            <div class="row">
+              <div  class="name col col-100"><a ng-click="match(show.LicenseNo)">{{show.ProductCategoryPSS}}</a></div>
+
+            </div>
+            <div class="row">
+              <div  class="name col col-100"><a ng-click="match(show.LicenseNo)">{{show.Brand}}</a></div>
+
+            </div>
+
+
+
+            <!--<p>Status: {{show.status}}</p>-->
+
+
+
+
+
+          </div>
+        </div>
+
+
+
+        <div class="result" ng-show="matchData">
+          <div  class="col seperater col-100">
+
+
+            <div class="row">
+              <div  class="name col col-100">{{matchData.LicenseNo}}</div>
+
+            </div>
+            <div class="row">
+              <div  class="name col col-100">{{matchData.UnitName}}</div>
+
+            </div>
+            <div class="row">
+              <div  class="name col col-100">{{matchData.Brand}}</div>
+
+            </div>
+
+            <div class="row">
+              <div  class="name col col-100">{{matchData.ProductCategoryPSS}}</div>
+
+            </div>
+
+            <div class="row">
+              <div  class="name col col-100">{{matchData.ProductByDivision}}</div>
+
+            </div>
+
+            <div class="row">
+              <div  class="name col col-100">{{matchData.ValidTo}}</div>
+
+            </div>
+
+            <div class="row">
+              <div  class="name col col-100">{{matchData.Division}}</div>
+
+            </div>
+
+
+
+            <!--<p>Status: {{show.status}}</p>-->
+
+
+
+
+
+          </div>
+        </div>
+
+
+
+
+
+        <h4 ng-show="searchData.length !=''"> This Product is certified by PSQCA</h4>
+        <h4 ng-show="notFound"> Product Not Found</h4>
+
+
+
+
+      </div>
+
+
+      <div class="row footertab">
+        <div class="col col-33">
+          <a class="tab-item" ui-sref="home">
+            <i class="icon ion-home"></i>
+            Home
+          </a>
+        </div>
+
+        <div class="col col-33">
+          <a class="tab-item" ui-sref="about">
+            <i class="icon ion-information-circled"></i>
+            About PSQCA
+          </a>
+        </div>
+
+        <div class="col col-33">
+          <a class="tab-item" ng-click="logout()">
+            <i class="icon ion-log-out"></i>
+            Logout
+          </a>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <div class = 'pane-bar pane-footer'>
+        <p class="Text">Copyrights 2016 by PSQCA<br>Design and Developed by Adarts Digital</p>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

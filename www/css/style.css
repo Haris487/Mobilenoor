@@ -1,0 +1,492 @@
+/* Empty. Add your own CSS if you like */
+@font-face {
+  font-family: 'ufontscomepisodei';
+  src: url('./ufontscomepisodei.eot');
+  src: local('ufontscomepisodei'), url('./ufontscomepisodei.woff') format('woff'), url('./ufontscomepisodei.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'terranital';
+  src: url('./terranital.eot');
+  src: local('terranital'), url('./terranital.woff') format('woff'), url('./terranital.ttf') format('truetype');
+}
+.content{
+  background-image: url("../img/background.jpg");
+}
+
+.pane-bar{
+  background-image : url("../img/footer.png")!important;
+  color : white;
+  font-size: 11px;
+
+
+}
+
+.card{
+  max-width: 350px;
+  background-color: rgba(255, 255, 255, 0.2); !important;
+}
+
+.pane-header{
+  text-align: center;
+
+}
+
+.pane-footer{
+  line-height: 1;
+  font-size: 10px;
+  text-align: end;
+}
+
+
+.Text{
+  padding : 0px;
+  margin : 0px;
+}
+p.text{
+  color: white;
+  margin: 6px 0px;
+}
+p.head{
+  padding: 5px 0px;
+}
+.card{
+  width:87%;
+  margin: 65px auto;
+
+}
+
+img#logo{
+  float:right;
+}
+#field-required{
+  width:130px;
+  max-width: 180px;
+  padding : 1px;
+  font-size: 12.5px;
+  color: #fff;
+  margin-top:25px;
+  text-align: center;
+  background-color: #4cd964;
+}
+div.inputs{
+  padding:12px;
+}
+button{
+  margin-top:15px !important;
+}
+
+#logo{
+  margin: 5%;
+
+}
+
+h4{
+  color : white;
+  font-style: italic;
+  text-align: center;
+}
+
+
+input{
+  height:20px !important;
+
+}
+.pane-footer{
+  padding:10px;
+}
+.inputdiv {
+  padding-top: 15px ;
+  padding-bottom: 15px ;
+
+}
+.button{
+  height: 36px !important;
+  min-height: 30px !important;
+  line-height: 36px;
+  border-radius: 4px;
+}
+
+/*uska hai*/
+.card{
+  color : white;
+}
+
+.label-login{
+  padding: 0px; !important
+
+}
+.login-input{
+  padding-left: 60px !important;
+}
+
+.background-color{
+
+}
+.icon-clickable{
+  text-align: center;
+  border: 5px solid gray;
+  border-radius: 5px;
+  width : 70px;
+  margin: 0 auto;
+  height: 70px;
+  padding-top:10px;
+}
+
+.icon{
+
+  width : 100%;
+  padding: 5px;
+  font-size: 40px;
+
+}
+
+.row-margin{
+  margin-bottom: 0px;
+  margin-left:10px;
+}
+
+.icon-description{
+  text-align: center;
+  padding: 12px;
+}
+.icon-clickable{
+  cursor:pointer;
+
+}
+h2{
+  color:white;
+  padding: 0 20px;
+
+}
+p.about{
+  text-align: justify;
+  padding: 20px;
+  box-sizing: border-box;
+
+}
+
+a.fb{
+  cursor: pointer;
+  color: #fff;
+}
+button.absolute{
+  /*position: absolute;*/
+  margin-top: 4px !important;
+  /*margin-left: -41px;*/
+  width: 3em;
+  border: none;
+  border-radius: 2px;
+  background-image : url("../img/footer.png");
+  /*height: 2.5em;*/
+
+}
+.auth-icons{
+  width: 24px;
+}
+
+.ion-key, .ion-email,.ion-ios-arrow-back{
+
+  width: 100%;
+  /* padding: 5px; */
+  font-size: 24px;
+  color: white;
+  transform: rotate(40deg);
+
+}
+.auth-buttons{
+  padding-left: 0px;
+  position: absolute;
+}
+.list{
+
+  margin-bottom: 0px !important;
+
+}
+.container li{
+  margin-left: 2em;
+  text-indent: -2em;
+  padding: 10px;
+}
+
+.bg{
+  background-color: rgba(255,255,255,.2);
+  margin-top: 20px;
+}
+select{
+  width: 100% !important;
+  max-width: 100% !important;
+  direction: ltr !important;
+}
+
+.align{
+  text-align: center;
+  color: #fff;
+  font-style: normal;
+  font-variant: small-caps;
+}
+.item-input{
+
+  border-radius: 3px;
+}
+.bg input{
+  color: #fff;
+}
+.popup{
+  width: 300px !important;
+  border-radius: 4px;
+  background-color: rgba(0,0,0,0.5) !important;
+}
+.popup h3{
+  color: white;
+}
+
+.popup-body input{
+  padding:15px;
+}
+
+.downloaditem{
+  margin:8px !important;
+  padding-top : 7px;
+  padding-bottom : 7px;
+  padding-left : 7px;
+  font-size: 12px;
+}
+.downicon{
+  margin: 0px !important;
+  top:-5px !important;
+  background-color: transparent !important;
+  color : #4cd964 !important;
+  padding: 0px;
+}
+.downloadtext{
+
+  text-overflow: ellipsis;
+}
+img.icon {
+  margin-top: -14px;
+}
+
+.name{
+  text-align: center;
+
+}
+.name a{
+  cursor: pointer;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.result{
+  height:auto;
+  max-height: 160px;
+  overflow-y: scroll;
+}
+.seperater{
+  border-bottom: 2px dotted white;
+}
+input[disabled]{
+  background-color: transparent !important;
+}
+.loading{
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+
+}
+.font{
+  font-family: 'terranital' !important;
+  font-size: large;
+}
+.logo{
+  width:100%;
+}
+.urdu{
+  width: 70%;
+  height: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.logo2{
+  margin: 3px auto;
+}
+.box-sm{
+  height:15px;
+  width:15px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+/*Noor Work HEAD */
+.footertab{
+  background-color: rgba(0,0,0,.2);
+
+}
+.tab-item .icon {
+  margin: 1px auto;
+}
+.tab-item {
+  font-size: 11px;
+}
+/*Splash Screen*/
+
+.progressBar{
+  height: 10px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: grey;
+
+}
+.progressFill{
+  height: 100%;
+  width: 0%;
+  background-color : white;
+
+}
+.progressText{
+  color: #E1F5FE;
+  text-align: center;
+  font-family: 'terranital' !important;
+}
+.fullScreen{
+  position: fixed !important;
+  height: 100%;
+  width: 100%;
+   
+  z-index: 2;
+}
+.fillSpace{
+  height: 351px;
+}
+.animationSpace{
+  width: 100%;
+  height : 100px;
+  text-align:center
+}
+.tick{
+
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.splashlogo{
+  display: block;
+
+  position: relative;
+  max-width: 350px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.animate{
+  animation: MoveUpDown 1s ease-in infinite;
+  -webkit-animation: MoveUpDown 1s ease-in infinite;
+  -webkit-animation-direction: alternate;
+  -moz-animation:  MoveUpDown 1s ease-in infinite;
+  -o-animation-name: MoveUpDown;
+  -o-animation-duration: 1s;
+  -o-animation-iteration-count: infinite;
+}
+
+@keyframes MoveUpDown {
+  0% {
+    margin-top: 0px;
+  }
+  10% {
+    margin-top: 14px;
+  }
+  20% {
+    margin-top: 28px;
+  }
+  30% {
+    margin-top: 42px;
+  }
+  40% {
+    margin-top: 56px;
+  }
+  50% {
+    margin-top: 70px;
+  }
+  60% {
+    margin-top: 56px;
+  }
+  70% {
+    margin-top: 42px;
+  }
+  80% {
+    margin-top: 28px;
+  }
+  90% {
+    margin-top: 14px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+
+
+
+
+
+}
+
+
+.spinner {
+  margin: 100px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.cube1 {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+  animation: sk-cubemove 1.8s infinite ease-in-out;
+}
+.cube2 {
+  background-color: green;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+  animation: sk-cubemove 1.8s infinite ease-in-out;
+}
+
+.cube2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+@-webkit-keyframes sk-cubemove {
+  25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+  50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+  75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+  100% { -webkit-transform: rotate(-360deg) }
+}
+
+@keyframes sk-cubemove {
+  25% {
+    transform: translateX(42px) rotate(-90deg) scale(0.5);
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+  } 50% {
+      transform: translateX(42px) translateY(42px) rotate(-179deg);
+      -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+    } 50.1% {
+        transform: translateX(42px) translateY(42px) rotate(-180deg);
+        -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+      } 75% {
+          transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+          -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+        } 100% {
+            transform: rotate(-360deg);
+            -webkit-transform: rotate(-360deg);
+          }
+}
+

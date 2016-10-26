@@ -1,0 +1,66 @@
+<ion-view>
+  <ion-content class = 'content'>
+
+    <!-- A panel for all pages similar -->
+    <div class = 'card'>
+      <div class = 'pane-bar pane-header'>
+        <p class="head">Pakistan Standards & Quality Control Authority</p>
+      </div>
+
+      <button class="absolute" ng-click="subscribe()" ion-button><i class="icon ion-email"></i></button>
+
+      <div class = 'pane-body'>
+        <div class="row">
+          <div class = 'col col-50'>
+            <p id = 'field-required'>
+              Fill Required Fields
+            </p>
+          </div>
+
+          <div class = 'col col-50'>
+            <img id = 'logo' src="img/logo.png" alt = 'LOGO'/>
+          </div>
+        </div>
+
+        <div class = 'row'>
+          <div class="col col-100">
+            <h4>Stay Updated with PSQCA</h4>
+          </div>
+
+        </div>
+        <form name="loginForm" ng-submit="login()">
+          <div class="inputs">
+            <p>{{message}}</p>
+            <div class='list'>
+              <p class='text'>E-mail</p>
+              <label class="item item-input">
+                <input type="email" ng-model="user.email" placeholder="E-mail" required>
+              </label>
+            </div>
+            <div class='list'>
+              <p class='text'>Password</p>
+              <label class="item item-input">
+                <input type="password" ng-model="user.password" placeholder="Password" required>
+              </label>
+            </div>
+            <a class="fb" ng-click="showPopup()">Forget Password</a>
+
+            <button class="button button-full button-balanced" ng-disabled="loginForm.$invalid" ng-click="storeCookie(user.email, user.password)">
+              Login
+            </button>
+
+
+
+          </div>
+        </form>
+      </div>
+      <div class = 'pane-bar pane-footer'>
+        <p class="Text">Copyrights 2016 by PSQCA<br>Design and Developed by Adarts Digital</p>
+      </div>
+
+    </div>
+
+  </ion-content>
+
+
+</ion-view>

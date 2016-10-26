@@ -1,0 +1,84 @@
+<ion-view>
+  <ion-content class = 'content'>
+
+    <!-- A panel for all pages similar -->
+    <div class = 'card'>
+
+      <div class = 'pane-bar pane-header'>
+        <p class="head">Pakistan Standards & Quality Control Authority</p>
+      </div>
+
+      <button class="absolute" ng-click="loginPage()" ion-button><i class="icon ion-key"></i></button>
+
+      <div class = 'pane-body'>
+        <div class="row">
+          <div class = 'col col-50'>
+            <p id = 'field-required'>
+              Fill Required Fields
+            </p>
+          </div>
+
+          <div class = 'col col-50'>
+            <img id = 'logo' src="img/logo.png" alt = 'LOGO'/>
+          </div>
+        </div>
+
+        <div class = 'row'>
+          <div class="col col-100">
+            <h4>Stay Updated with PSQCA</h4>
+          </div>
+
+        </div>
+        <form name="subscribeForm" ng-submit="subscribe()">
+          <div class="inputs">
+            <div class='list'>
+              <p class='text'>Full Name</p>
+              <label class="item item-input">
+                <input type="text" ng-model="user.name" placeholder="Full Name" required>
+              </label>
+            </div>
+            <div class='list'>
+              <p class='text'>E-mail</p>
+              <label class="item item-input">
+                <input type="email" ng-model="user.email" placeholder="E-mail" required>
+              </label>
+            </div>
+            <div class='list'>
+              <p class='text'>Password</p>
+              <label class="item item-input">
+                <input type="password" ng-model="user.password" placeholder="Password" required>
+              </label>
+            </div>
+            <div class='list'>
+              <p class='text'>Phone Number</p>
+              <label class="item item-input">
+                <input type="text" ng-model="user.phoneNumber" placeholder="Phone Number" required>
+              </label>
+            </div>
+
+            <div class='list'>
+              <p class='text'>Company</p>
+              <label class="item item-input">
+                <input type="text" ng-model="user.companyName" placeholder="Company" required>
+              </label>
+            </div>
+
+            <button  class="button button-full button-balanced" ng-disabled="subscribeForm.$invalid">
+              Subscribe
+            </button>
+
+          </div>
+        </form>
+
+
+      </div>
+      <div class = 'pane-bar pane-footer'>
+        <p class="Text">Copyrights 2016 by PSQCA<br>Design and Developed by Adarts Digital</p>
+      </div>
+
+    </div>
+
+  </ion-content>
+
+
+</ion-view>

@@ -1,0 +1,54 @@
+<ion-view>
+  <ion-content class="content">
+    <div class="card">
+      <div class="pane-bar pane-header">
+        <p class="head">Pakistan Standards & Quality Control Authority</p>
+      </div>
+      <button class="absolute" ng-click="myGoBack()" ion-button><i class="icon ion-ios-arrow-back"></i></button>
+      <ul ng-repeat="item in itemsn" class = 'list'>
+        <li class = 'item item-button-right downloaditem'>
+          <p class =' downloadtext'>{{item.name}}</p>
+
+          <button ng-click="downloadFile(item.id)" class="button button-positive downicon">
+            <i class="icon ion-archive "></i>
+          </button>
+        </li>
+      </ul>
+
+      <div class="row footertab">
+        <div class="col col-33">
+          <a class="tab-item" ui-sref="home">
+            <i class="icon ion-home"></i>
+            Home
+          </a>
+        </div>
+
+        <div class="col col-33">
+          <a class="tab-item" ui-sref="about">
+            <i class="icon ion-information-circled"></i>
+            About PSQCA
+          </a>
+        </div>
+
+        <div class="col col-33">
+          <a class="tab-item" ng-click="logout()">
+            <i class="icon ion-log-out"></i>
+            Logout
+          </a>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <div class="pane-bar pane-footer">
+        <p class="Text">Copyrights 2016 by PSQCA<br>Design and Developed by Adarts Digital</p>
+      </div>
+    </div>
+  </ion-content>
+
+</ion-view>

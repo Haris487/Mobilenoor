@@ -1,0 +1,77 @@
+<ion-view>
+  <!--|||||||||||||||||||||||||||||||CODE FOR SPLASH SCREEN |||||||||||||||||||||||||||||||||-->
+ 
+    <!-- Splash Screen Top PSQCA Logo -->
+
+    <div ng-show="!notFirstTime" class="fullScreen">
+    <div><img src="img/app-homepage-logo.png" class="splashlogo"> </div>
+    <!--Animated Image-->
+    <div class = "animationSpace">
+       <div class="spinner">
+        <div class="cube1"></div>
+        <div class="cube2"></div>
+      </div>
+    </div>
+    <!--Progress bar-->
+    <div class="progress">
+      <div class = progressBar>
+        <div class="progressFill" ng-style="{width: progress+'%'}"></div>
+      </div>
+      <div class = "progressText">
+        {{progress}}%
+      </div>
+    </div>
+    <!--Put in the End Of Div fullScreen-->
+    <div class="fillSpace"></div>
+
+    
+</div>
+
+
+  <ion-content class = 'content'>
+
+
+
+
+
+
+    <!--|||||||||||||||||||||||||||||||CODE FOR WELCOME |||||||||||||||||||||||||||||||||-->
+    <div ng-show="notFirstTime" class="card">
+      <div class="pane-bar pane-header">
+        <p class="head">Pakistan Standards & Quality Control Authority</p>
+      </div>
+      <div  class=" col auth-buttons">
+        <button class="absolute" ng-click="subscribe()" ion-button><i class="icon ion-email"></i></button><br>
+        <button class="absolute" ng-click="loginPage()" ion-button><i class="icon ion-key"></i></button>
+      </div>
+      <div class="pane-body">
+        <!-- TODO Logo-large reqiire -->
+        <div class="row">
+          <div class="col"></div>
+          <div class="col col-75"> <img class="logo" src="img/app-homepage-logo.png" alt="logo-large"></div>
+          <div class="col"></div>
+
+        </div>
+        <div class="row">
+          <div class="col col-100">
+            <p ng-show="isLoaded" class="loading font">Say No To <br>Sub-Standard Products</p>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <p class="loading">Pakistan Standards and Quality Control Authority</p>
+        </div>
+        <div class="row">
+          <img class="urdu" src="img/pcqca-urdu.png">
+        </div>
+      </div>
+      <div class="row">
+        <img class="logo2" src="img/logo-main.png">
+      </div>
+      <div class="pane-bar pane-footer">
+        <p class="Text">Copyrights 2016 by PSQCA<br>Design and Developed by Adarts Digital</p>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
